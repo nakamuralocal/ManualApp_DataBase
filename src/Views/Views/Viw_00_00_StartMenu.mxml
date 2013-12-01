@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
+		 xmlns:s="library://ns.adobe.com/flex/spark"
+		 xmlns:mx="library://ns.adobe.com/flex/mx"
+		 xmlns:Components="Views.Components.*"
+		 xmlns:ViewControllers="Controllers.Views.*"
+		 width="1240" height="800" gap="0" horizontalAlign="center">
+	<fx:Declarations>
+		<!-- 非ビジュアルエレメント (サービス、値オブジェクトなど) をここに配置 -->
+		<ViewControllers:Vic_00_00_StartMenu id="viewCon"/>
+	</fx:Declarations>
+	<Components:Ocv_MultiLabel text="マニュアルアプリ用データベース　メインメニュー"/>
+	<s:Spacer width="100%" height="20"/>	
+	
+	<s:HGroup horizontalAlign="center" horizontalCenter="0" gap="20"
+			  width="820" height="700">
+		
+		<s:VGroup id="vgr_CreateProject" width="400" height="100%" gap="10">
+			<Components:Ocv_MultiLabel text="新規作成はこちら"/>
+			<s:Button id="btn_StartCreate" width="100%" height="90" label="新規作成" fontSize="24"/>
+		</s:VGroup>
+		
+		<s:VGroup id="vgr_StartProject" width="400" height="100%" gap="10">
+			<Components:Ocv_MultiLabel text="既存車種選択"/>
+			<s:Scroller width="100%" height="660"
+						verticalScrollPolicy="auto" horizontalScrollPolicy="off">
+				<s:VGroup id="vgr_SelectCars">
+					<Components:Ocv_ProjectsSelectLabel/>
+				</s:VGroup>
+			</s:Scroller>
+		</s:VGroup>
+		
+	</s:HGroup>
+	
+</s:VGroup>

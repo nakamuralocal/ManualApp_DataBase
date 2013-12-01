@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		  xmlns:s="library://ns.adobe.com/flex/spark" 
+		  xmlns:mx="library://ns.adobe.com/flex/mx"
+		  xmlns:Components="Views.Components.*"
+		  xmlns:Contrller="Controllers.Components.*"
+		  width="1240" height="800" gap="20" horizontalAlign="center">
+	<fx:Declarations>
+		<!-- 非ビジュアルエレメント (サービス、値オブジェクトなど) をここに配置 -->
+		<Contrller:Occ_ProjectsSetting id="viewCon"/>
+	</fx:Declarations>
+	
+	<Components:Ocv_MultiLabel id="mlb_WindowTitle" text="プロジェクト新規作成：基本情報設定"/>
+	
+	<s:VGroup width="1200" height="80" gap="20">
+		
+		<s:HGroup width="100%" height="30">
+			<Components:Ocv_SmallLabel width="30%" text="車種名（英数字）" textAlign="right"/>
+			<s:TextInput id="txi_CarName" width="70%" height="100%"/>
+		</s:HGroup>
+		
+		<s:HGroup width="100%" height="30">
+			<Components:Ocv_SmallLabel width="30%" text="セーブフォルダ" textAlign="right"/>
+			<s:Label id="lab_SaveFolder" width="50%" height="100%" verticalAlign="middle"/>
+			<s:Button id="btn_SelectSaveFolder" width="20%" height="100%" label="選択"/>
+		</s:HGroup>
+		
+	</s:VGroup>
+	
+	<s:HGroup width="1200" height="400" gap="20">
+		
+		<s:VGroup width="25%">
+			<Components:Ocv_SmallLabel width="100%" text="グレード"/>
+			<Components:Ocv_FreeAddTextGroup id="fag_Grade" width="100%" height="600"/>
+		</s:VGroup>
+		
+		<s:VGroup width="25%">
+			<Components:Ocv_SmallLabel width="100%" text="グレード分割"/>
+			<Components:Ocv_FreeAddTextGroup id="fag_SubGrade" width="100%" height="600"/>
+		</s:VGroup>
+		
+		<s:VGroup width="600">
+			<Components:Ocv_SmallLabel width="100%" text="使用しないチェックを外して下さい"/>
+			<Components:Ocv_TilingCheckBox id="tcb_Grade" width="600"/>
+		</s:VGroup>
+		
+	</s:HGroup>
+	
+	<s:HGroup width="1200" height="30">
+		<s:Spacer width="80%"/>
+		<s:Button id="btn_Next" width="20%" height="100%" label="保存"/>
+	</s:HGroup>
+	
+</s:VGroup>

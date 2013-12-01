@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:BorderContainer xmlns:fx="http://ns.adobe.com/mxml/2009"
+				   xmlns:s="library://ns.adobe.com/flex/spark"
+				   xmlns:mx="library://ns.adobe.com/flex/mx"
+				   xmlns:Controller="Controllers.Components.*"
+				   width="400" height="90" borderWeight="1"
+				   >
+	<fx:Declarations>
+		<!-- 非ビジュアルエレメント (サービス、値オブジェクトなど) をここに配置 -->
+		<Controller:Occ_ProjectsSelectLabel id="viewCon"/>
+	</fx:Declarations>
+	<s:Label id="lab_CarName" x="5" y="4" width="100%" height="24" fontSize="24" text="Crown Athlete"
+			 verticalAlign="middle"/>
+	<s:Label x="40" y="40" fontSize="14" text="作成日 ： " textAlign="right" width="100" height="18" verticalAlign="middle"/>
+	<s:Label x="140" y="40" id="lab_CreatedDate" fontSize="14" text="2013/11/24" width="200" height="18" verticalAlign="middle"/>
+	<s:Label x="40" y="64" fontSize="14" text="最終更新日 ： " textAlign="right" width="100" height="18" verticalAlign="middle"/>
+	<s:Label x="140" y="64" id="lab_UpDate" fontSize="14" text="2013/11/24" width="200" height="18" verticalAlign="middle"/>
+</s:BorderContainer>
